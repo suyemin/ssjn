@@ -1,0 +1,752 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>숨쉼제니 잠실송파점 | 1:1 프라이빗 수기 운동 스트레칭 케어</title>
+  <meta name="description" content="숨쉼제니 잠실송파점은 1:1 프라이빗 맞춤 수기 운동 스트레칭 케어 공간입니다. 신체 밸런스, 긴장 완화, 움직임 회복을 위한 예약제 전문 케어를 제공합니다.">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="숨쉼제니 잠실송파점 | 1:1 프라이빗 케어">
+  <meta property="og:description" content="나만의 숨 쉴 공간, 그리고 비교할 수 없는 유일함. 1:1 프라이빗 맞춤 수기 운동 스트레칭 케어.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/inside01.jpg?v=20240917">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="images/SSLogo1.png?v=20240917">
+  <link rel="icon" type="image/png" sizes="192x192" href="images/SSLogo1.png?v=20240917">
+  <link rel="apple-touch-icon" href="images/SSLogo1.png?v=20240917">
+
+  <!-- 첫 이미지 사전 로드 -->
+  <link rel="preload" as="image" href="images/inside01.jpg?v=20240917">
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Noto+Serif+KR:wght@400;600&display=swap');
+
+    :root{
+      --maxw:1120px;
+      --gutter:20px;
+      --gutter-mobile:32px;
+      --bg:#ffffff;
+      --cream:#f6f3ef;
+      --surface:#ffffff;
+      --ink:#232323;
+      --muted:#7d776f;
+      --line:#e8e2db;
+      --accent:#9a8367;
+      --accent-2:#7f6a54;
+      --icon:#6f5b47;
+      --radius:14px;
+      --shadow-sm:0 2px 10px rgba(0,0,0,.04);
+      --shadow:0 16px 40px rgba(0,0,0,.08);
+    }
+
+    *{ box-sizing:border-box; }
+    html,body{ margin:0; padding:0; }
+    html{ scroll-behavior:smooth; }
+    body{
+      background:var(--bg);
+      color:var(--ink);
+      line-height:1.75;
+      font-family:'Noto Sans KR', system-ui, -apple-system, sans-serif;
+      word-break:keep-all;
+      -webkit-font-smoothing:antialiased;
+      text-rendering:optimizeLegibility;
+    }
+
+    .wrap{
+      max-width:var(--maxw);
+      margin:0 auto;
+      padding:0 var(--gutter);
+    }
+
+    /* Header */
+    header{
+      position:sticky;
+      top:0;
+      z-index:100;
+      background:rgba(255,255,255,.9);
+      backdrop-filter:blur(10px);
+      -webkit-backdrop-filter:blur(10px);
+      border-bottom:1px solid var(--line);
+    }
+
+    .header-row{
+      height:68px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+    }
+
+    .brand{
+      font-family:'Noto Serif KR',serif;
+      font-weight:600;
+      font-size:24px;
+      color:#3a3026;
+      white-space:nowrap;
+      text-decoration:none;
+    }
+
+    nav{
+      display:flex;
+      gap:22px;
+      white-space:nowrap;
+      overflow-x:auto;
+      -webkit-overflow-scrolling:touch;
+      scrollbar-width:none;
+    }
+    nav::-webkit-scrollbar{ display:none; }
+
+    nav a{
+      text-decoration:none;
+      color:var(--muted);
+      font-weight:500;
+      font-size:16px;
+      padding:8px 2px;
+      position:relative;
+      transition:color .2s ease;
+    }
+    nav a::after{
+      content:"";
+      position:absolute;
+      left:0;
+      bottom:4px;
+      height:2px;
+      width:0;
+      background:var(--accent);
+      transition:width .25s ease;
+    }
+    nav a:hover{ color:var(--accent-2); }
+    nav a:hover::after{ width:100%; }
+
+    section{ padding:70px 0; }
+
+    h2{
+      margin:0 0 24px;
+      color:#4a3e33;
+      font-weight:700;
+      font-size:22px;
+    }
+
+    /* Gallery */
+    #gallery.first{ padding-top:96px; }
+
+    .gallery-intro{
+      text-align:center;
+      color:#6f6962;
+      font-size:18px;
+      line-height:1.9;
+      max-width:860px;
+      margin:0 auto 18px;
+    }
+
+    .gallery-intro strong{
+      display:block;
+      margin-bottom:8px;
+      color:#4a3e33;
+      font-size:22px;
+      font-weight:700;
+    }
+
+    .gallery-grid{
+      display:grid;
+      gap:16px;
+      margin-top:12px;
+      grid-template-columns:repeat(auto-fit, minmax(320px, 1fr));
+    }
+
+    .gallery-item{
+      position:relative;
+      aspect-ratio:2 / 3;
+      border-radius:var(--radius);
+      overflow:hidden;
+      box-shadow:var(--shadow);
+      border:1px solid var(--line);
+      transition:transform .3s ease, box-shadow .3s ease;
+      background:#fff;
+    }
+
+    .gallery-item:hover{
+      transform:translateY(-4px);
+      box-shadow:0 20px 50px rgba(0,0,0,.12);
+    }
+
+    .gallery-item img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      object-position:center;
+      display:block;
+    }
+
+    /* Hero */
+    .hero{
+      background:var(--cream);
+      border-top:1px solid var(--line);
+      border-bottom:1px solid var(--line);
+    }
+
+    .hero-inner{ padding:64px 0; }
+
+    .hero-grid{
+      display:grid;
+      grid-template-columns:0.9fr 1.1fr;
+      gap:28px;
+      align-items:center;
+    }
+
+    .hero-logo{
+      justify-self:center;
+      align-self:center;
+      width:clamp(180px, 28vw, 340px);
+      height:auto;
+      display:block;
+    }
+
+    .summary{
+      color:var(--muted);
+      font-size:clamp(14px, 2.6vw, 18px);
+      margin:0 0 22px;
+    }
+
+    .summary .line{ display:block; }
+
+    .cta{
+      display:inline-block;
+      padding:12px 20px;
+      border-radius:999px;
+      background:#fff;
+      color:var(--accent-2);
+      text-decoration:none;
+      font-weight:700;
+      border:1px solid var(--line);
+      box-shadow:0 6px 16px rgba(0,0,0,.06);
+      transition:transform .15s ease, filter .15s ease;
+    }
+
+    .cta:hover{
+      filter:brightness(1.02);
+      transform:translateY(-1px);
+    }
+
+    /* About */
+    .intro{
+      color:var(--muted);
+      font-size:18px;
+      max-width:820px;
+    }
+
+    /* Programs */
+    .cards{
+      margin-top:24px;
+      display:grid;
+      gap:18px;
+      grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));
+    }
+
+    .card{
+      background:var(--surface);
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      padding:20px;
+      box-shadow:var(--shadow-sm);
+    }
+
+    .card h3{
+      margin:0 0 8px;
+      color:var(--accent-2);
+      font-size:18px;
+      font-weight:700;
+    }
+
+    .card p{
+      margin:0;
+      color:#6f6962;
+      font-size:15px;
+    }
+
+    .note{
+      margin-top:10px;
+      color:#8a837a;
+      font-size:14px;
+    }
+
+    /* Value */
+    .value{
+      background:var(--cream);
+      border-top:1px solid var(--line);
+      border-bottom:1px solid var(--line);
+    }
+
+    .value h3{
+      margin:0 0 10px;
+      font-size:18px;
+      color:#5a4d41;
+    }
+
+    .manifest{
+      color:#6d655d;
+      white-space:pre-line;
+      font-size:16px;
+      line-height:1.9;
+      border-left:3px solid var(--line);
+      padding-left:14px;
+    }
+
+    /* FAQ */
+    .faq-list{
+      display:grid;
+      gap:14px;
+    }
+
+    .faq-item{
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      padding:20px;
+      box-shadow:var(--shadow-sm);
+    }
+
+    .faq-item h3{
+      margin:0 0 10px;
+      color:var(--accent-2);
+      font-size:17px;
+      font-weight:700;
+      line-height:1.6;
+    }
+
+    .faq-item p{
+      margin:0;
+      color:#6f6962;
+      font-size:15px;
+      line-height:1.85;
+    }
+
+    /* Contact */
+    .contact ul{
+      list-style:none;
+      padding:0;
+      margin:0 0 18px;
+    }
+
+    .contact li{
+      padding:10px 0;
+      border-bottom:1px dashed var(--line);
+    }
+
+    .contact li:last-child{ border-bottom:none; }
+    .contact strong{ color:#6b5b49; }
+
+    .contact a{
+      color:#806c58;
+      text-decoration:none;
+    }
+
+    .contact a:hover{ text-decoration:underline; }
+
+    .phone{
+      color:#806c58;
+      font-weight:700;
+    }
+
+    .links-row{
+      margin-top:16px;
+      display:flex;
+      gap:16px;
+      align-items:center;
+      justify-content:center;
+    }
+
+    .icon-btn{
+      width:64px;
+      height:64px;
+      border-radius:50%;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      background:#fff;
+      border:1px solid var(--line);
+      box-shadow:0 8px 22px rgba(0,0,0,.08);
+      text-decoration:none;
+      color:var(--icon);
+      font-size:0;
+      transition:transform .15s ease, box-shadow .15s ease, color .15s ease, border-color .15s ease;
+    }
+
+    .icon-btn:hover{
+      transform:translateY(-1px);
+      box-shadow:0 12px 28px rgba(0,0,0,.1);
+      color:#5a4636;
+      border-color:#e1d8cf;
+    }
+
+    .icon-btn svg{
+      width:28px;
+      height:28px;
+    }
+
+    .icon-btn svg *{ fill:currentColor; }
+
+    footer{
+      margin-top:24px;
+      background:var(--cream);
+      border-top:1px solid var(--line);
+      color:#8d857b;
+    }
+
+    footer .wrap{
+      height:74px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size:14px;
+    }
+
+    /* Mobile */
+    @media (max-width:760px){
+      .wrap{
+        padding-left:calc(var(--gutter-mobile) + env(safe-area-inset-left));
+        padding-right:calc(var(--gutter-mobile) + env(safe-area-inset-right));
+      }
+
+      .header-row{ height:64px; }
+      .brand{ font-size:20px; }
+      nav{ gap:14px; }
+      nav a{ font-size:14px; padding:10px 4px; }
+
+      section{ padding:60px 0; }
+      #gallery.first{ padding-top:84px; }
+
+      .gallery-intro{
+        font-size:16px;
+        text-align:left;
+      }
+
+      .gallery-intro strong{
+        font-size:20px;
+      }
+
+      .gallery-grid{
+        grid-template-columns:1fr;
+        gap:12px;
+      }
+
+      .gallery-item{ aspect-ratio:3 / 4; }
+
+      .hero-grid{ display:block; }
+      .hero-logo{
+        margin:0 auto 18px;
+        width:clamp(160px, 48vw, 240px);
+      }
+
+      .cards{ gap:14px; }
+      .card{ padding:18px; }
+    }
+
+    @media (min-width:761px) and (max-width:1024px){
+      .gallery-grid{ grid-template-columns:repeat(2, 1fr); }
+    }
+
+    @media (min-width:1025px){
+      .gallery-grid{ grid-template-columns:repeat(3, 1fr); }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="wrap">
+      <div class="header-row">
+        <a class="brand" href="#gallery">숨쉼제니</a>
+        <nav aria-label="주요 메뉴">
+          <a href="#gallery">공간</a>
+          <a href="#about">ABOUT</a>
+          <a href="#programs">프로그램</a>
+          <a href="#value">가치</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contact">문의</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- 공간 -->
+  <section id="gallery" class="first">
+    <div class="wrap">
+      <p class="gallery-intro">
+        <strong>몸의 긴장과 흐름을 회복하는 1:1 프라이빗 케어 공간</strong>
+        숨쉼제니는 단 한 사람을 위한 맞춤 수기 운동 스트레칭 케어로<br>
+        겉만 잠시 덮는 관리가 아닌, 몸 안의 긴장과 흐름에 귀 기울여<br>
+        진짜 변화의 방향을 함께 찾아갑니다.
+      </p>
+
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="images/inside01.jpg?v=20240917" alt="숨쉼제니 프라이빗 케어 공간 1" fetchpriority="high" decoding="async">
+        </div>
+        <div class="gallery-item">
+          <img src="images/inside02.jpg?v=20240917" alt="숨쉼제니 프라이빗 케어 공간 2" loading="lazy" decoding="async">
+        </div>
+        <div class="gallery-item">
+          <img src="images/inside03.jpg?v=20240917" alt="숨쉼제니 프라이빗 케어 공간 3" loading="lazy" decoding="async">
+        </div>
+        <div class="gallery-item">
+          <img src="images/inside04.jpg?v=20240917" alt="숨쉼제니 프라이빗 케어 공간 4" loading="lazy" decoding="async">
+        </div>
+        <div class="gallery-item">
+          <img src="images/inside05.jpg?v=20240917" alt="숨쉼제니 프라이빗 케어 공간 5" loading="lazy" decoding="async">
+        </div>
+        <div class="gallery-item">
+          <img src="images/inside06.jpg?v=20240917" alt="숨쉼제니 프라이빗 케어 공간 6" loading="lazy" decoding="async">
+        </div>
+        <div class="gallery-item">
+          <img src="images/inside07.jpg?v=20240917" alt="숨쉼제니 프라이빗 케어 공간 7" loading="lazy" decoding="async">
+        </div>
+        <div class="gallery-item">
+          <img src="images/inside08.jpg?v=20240917" alt="숨쉼제니 프라이빗 케어 공간 8" loading="lazy" decoding="async">
+        </div>
+        <div class="gallery-item">
+          <img src="images/inside09.jpg?v=20240917" alt="숨쉼제니 프라이빗 케어 공간 9" loading="lazy" decoding="async">
+        </div>
+        <div class="gallery-item">
+          <img src="images/inside10.jpg?v=20240917" alt="숨쉼제니 프라이빗 케어 공간 10" loading="lazy" decoding="async">
+        </div>
+        <div class="gallery-item">
+          <img src="images/inside11.jpg?v=20240917" alt="숨쉼제니 프라이빗 케어 공간 11" loading="lazy" decoding="async">
+        </div>
+        <div class="gallery-item">
+          <img src="images/inside12.jpg?v=20240917" alt="숨쉼제니 프라이빗 케어 공간 12" loading="lazy" decoding="async">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="wrap hero-inner">
+      <div class="hero-grid">
+        <div>
+          <img class="hero-logo" src="images/SSLogo1.png?v=20240917" alt="숨쉼제니 로고" loading="lazy" decoding="async">
+        </div>
+        <div>
+          <p class="summary">
+            <span class="line">나만의 숨 쉴 공간, 그리고 비교할 수 없는 유일함</span>
+            <span class="line">1:1 프라이빗 나만의 공간</span>
+          </p>
+          <a class="cta" href="https://naver.me/5WOQza4q" target="_blank" rel="noopener">네이버 예약하기 (예약제 100%)</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <div class="wrap">
+      <h2>ABOUT</h2>
+      <p class="intro">
+        조용하고 단정한 1:1 프라이빗 공간에서, 신체 밸런스와 건강한 움직임을 회복하는 맞춤형 관리.
+        깊이 있는 분석과 섬세한 수기·움직임 코칭으로 일상의 컨디션을 리셋합니다.
+      </p>
+    </div>
+  </section>
+
+  <!-- Programs -->
+  <section id="programs">
+    <div class="wrap">
+      <h2>프로그램</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>숨쉼케어 A (Active)</h3>
+          <p>몸의 긴장을 풀고 활력을 주는 기본 밸런스 전신 케어.</p>
+        </div>
+        <div class="card">
+          <h3>숨쉼케어 S (Signature)</h3>
+          <p>움직임 분석·맞춤 수기·강화운동·보행/생활 스트레칭·바른 몸쓰기 교육 포함. 거북목/일자목/두통/수면 등 일상 기능 회복에 초점.</p>
+        </div>
+        <div class="card">
+          <h3>숨쉼케어 P (Performance)</h3>
+          <p>경기력·무대·라인·컨디션 최적화를 위한 퍼포먼스 케어.</p>
+        </div>
+        <div class="card">
+          <h3>숨쉼케어 C (Core)</h3>
+          <p>심부 내장기 케어와 코어 강화 중심 프로그램.</p>
+        </div>
+      </div>
+      <p class="note">※ 운동선수, 예술인은 프로그램/일정이 상이할 수 있어 <strong>별도 문의</strong> 바랍니다.</p>
+    </div>
+  </section>
+
+  <!-- Value -->
+  <section class="value" id="value">
+    <div class="wrap">
+      <h2>이곳의 가치</h2>
+      <h3>1:1 프라이빗 건강을 위한 자기관리 + 리셋케어 숨쉼제니</h3>
+      <div class="manifest">우리가 살아가며 무엇을 이루려 할 때,
+진짜 중요한 것은 무엇일까요?
+
+많은 지식, 수많은 경험보다
+끝내 우리를 지탱하는 건 "기본기"입니다.
+
+몸도 다르지 않습니다.
+혈액의 순환, 올바른 호흡, 발의 힘, 그리고 체온.
+이 단순한 네 가지가 무너지면
+그 위에 쌓은 모든 노력은 쉽게 흔들립니다.
+
+쉬워 보이고 단순해 보여도,
+정확히 지켜낼 때 비로소 몸은 새로워지고,
+삶의 한계 너머로 나아갈 수 있습니다.
+
+마음이 지칠 때, 몸이 무너질 때
+삶에도 새로고침 버튼이 필요합니다.
+
+디테일이 다른 유일함.
+아는 사람은 아는 이곳,
+그곳이 바로 숨쉼제니입니다.
+
+당신 안의 무언가를 다시 깨워주는 곳, 제니룸.</div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="wrap">
+      <h2>FAQ</h2>
+      <div class="faq-list">
+        <div class="faq-item">
+          <h3>Q. 잠실 림프 마사지 잘하는 곳 찾다가 오시는 분들도 많나요?</h3>
+          <p>네, 잠실마사지나 림프, 목어깨, 허리 때문에 검색하시다가 방문하시는 분들이 많습니다. 처음에는 시원하게 풀고 싶어서 오시지만, 반복되는 불편까지 같이 보면서 관리하다 보니 방문 주기를 늘려서라도 꾸준히 건강관리를 이어가시는 경우가 많습니다.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Q. 송파에서 체형교정 제대로 해보고 싶은 분들도 많이 오시나요?</h3>
+          <p>네, 이번에는 정말 체형을 바꾸고 싶다, 자세를 바꾸고 싶다 생각하고 방문하시는 분들도 많습니다. 단순히 한 번 받는 관리가 아니라 몸 사용 방식과 움직임까지 같이 보면서 이어가는 경우가 많습니다.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Q. 거북목 교정이나 일자목 때문에 방문해도 되나요?</h3>
+          <p>네, 거북목 교정, 일자목, 목어깨 자세 때문에 방문하시는 분들도 많습니다. 특히 스트레칭이나 운동을 해도 유지가 잘 안 되던 분들이 몸 전체 움직임과 사용 방식을 같이 보면서 관리받고, 필요한 레슨과 운동을 내 몸 상태에 맞춰 1:1로 받는 경우가 많습니다.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Q. 목어깨가 계속 뻐근하고 두통까지 같이 오는데도 도움 될까요?</h3>
+          <p>10년 이상 반복되는 통증으로 오시는 분들도 많습니다. 목어깨 불편과 두통은 한 부위만의 문제가 아니라 긴장 패턴, 호흡, 몸 사용 방식이 함께 영향을 주는 경우가 많습니다. 이런 부분을 함께 보면서 관리받기 위해 방문하시는 분들이 많습니다.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Q. 허리 통증이나 디스크가 있어도 방문 가능한가요?</h3>
+          <p>상태에 따라 다르지만, 허리 통증이나 디스크 이후 남아 있는 불편 때문에 방문하시는 분들도 많습니다. 허리만 보는 것이 아니라 골반, 움직임, 일상에서 몸을 쓰는 방식, 필요한 재활 운동 트레이닝까지 함께 보면서 진행합니다.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Q. 손목이나 발목 불편도 같이 봐주시나요?</h3>
+          <p>네, 손목이나 발목도 몸 전체 사용 패턴과 연결되어 있는 경우가 많아서 함께 보는 편입니다. 특히 손을 많이 쓰는 직업군이나 셰프처럼 반복적으로 손을 사용하는 분들, 산후 관리나 산후 마사지를 찾다가 방문하시는 분들도 많습니다. 또한 팔저림이나 손저림처럼 목어깨 긴장과 같이 나타나는 불편 때문에 방문하시는 경우도 많습니다. 한 부위만 보는 것이 아니라 몸 전체 흐름과 움직임을 같이 보면서 진행하기 때문에 손목, 발목뿐 아니라 팔이나 어깨 사용이 더 편해졌다고 말씀하시는 경우가 많습니다.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Q. 스트레칭이나 집에서 할 수 있는 루틴도 알려주시나요?</h3>
+          <p>네, 단순히 관리만 받는 것으로 끝나는 것이 아니라 집에서도 스스로 몸을 관리할 수 있도록 재활 스트레칭과 생활 루틴을 함께 알려드립니다. 꾸준히 몸을 지키고 싶어 하시는 분들이 좋아하시는 부분입니다.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Q. 림프순환마사지처럼 붓기나 컨디션 관리도 가능한가요?</h3>
+          <p>네, 꼭 특별히 아픈 곳이 없어도 몸이 무겁거나 붓는 느낌, 긴장이 잘 풀리지 않는 상태 때문에 방문하시는 분들도 많습니다. 순환이 원활해지면서 얼굴 붓기가 빠지고 컨디션이 달라졌다고 느끼는 분들이 많고, 실제로 소두가 된 것 같다는 말씀이나 얼굴이 더 정리된 느낌이라는 이야기를 많이 하십니다. 턱관절 불편이나 얼굴 비대칭, 눈 뻑뻑함이나 눈 건조감 때문에 방문하시는 경우도 있으며, 몸 전체 순환과 긴장을 함께 보면서 이런 부분까지 같이 변화가 느껴지는 경우가 많습니다. 그래서 단순히 붓기만 관리하는 것이 아니라 컨디션과 얼굴 느낌까지 함께 관리하기 위해 꾸준히 방문하시는 분들이 많고, 컨디션 관리와 자기 관리가 중요한 분들이 계속 찾아주시고 계십니다.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Q. 잠실 산후마사지나 산후 부종 관리로도 방문해도 되나요?</h3>
+          <p>네, 조리원에서 매일 마사지를 받았는데도 몸이 여전히 천근만근처럼 무겁고, 산후 부종이나 목어깨·허리·골반의 불편함이 남아 있어 방문하시는 분들도 많습니다. 임신과 출산이라는 위대한 여정을 마친 산모의 몸은 단순한 피로 상태가 아닙니다. 열 달 동안의 신체 변화로 무게 중심이 달라지고, 출산 후 예민해진 신경계와 근골격계의 긴장이 함께 남아 있을 수 있기 때문입니다.</p>
+          <p>출산 후 정체된 부종과 긴장이 오래 지속되면 근막과 연부조직이 굳어 서로 부드럽게 움직이지 못하는 상태가 생길 수 있습니다. 숨쉼제니는 이런 몸속 깊은 긴장과 순환의 막힘을 함께 보며, 신경계와 정렬의 균형을 다시 설계하는 산후 리커버리 관리를 진행합니다. 해부학적으로 림프가 최종적으로 모이는 길목을 터미너스(Terminus)라고 하는데, 이 흐름이 막혀 있으면 진정한 순환이 시작되기 어렵습니다. 그래서 숨쉼제니는 먼저 림프의 길목과 근골격계 긴장을 열어주는 데 집중합니다.</p>
+          <p>숨쉼제니만의 산후 리커버리는 겉근육만 강하게 풀어내는 방식이 아니라, 심부 근막의 섬세한 이완, 신경계 안정, 골반 밸런스와 근골격계 정렬, 순환 환경 회복을 함께 봅니다. 장기와 근육 사이의 깊은 조직까지 부드럽게 이완해 조직이 다시 유연하게 움직일 수 있도록 돕고, 출산 후 예민해진 몸이 깊은 이완 상태로 돌아갈 수 있도록 안내합니다.</p>
+          <p>필라테스나 PT 같은 운동을 시작하기 전에도 먼저 몸의 긴장이 낮아지고 순환이 확보되어야 움직임이 더 편안해질 수 있습니다. 숨쉼제니는 단순한 림프순환 테라피를 넘어, 산후 부종·컨디션·정렬을 함께 보는 1:1 맞춤형 리커버리를 지향합니다. 6층 단독 공간의 평온함 속에서 오직 한 분만을 위한 정교한 세션으로, 산후 회복의 시작을 조용하고 세심하게 함께합니다.</p>
+          <br>
+          <p>[교수님이 출산 하신 후 하셨던 말씀]</p>
+          <p>"유착과 정체가 몸을 얼마나 망가뜨리는지 알기에 전 목숨 걸고 관리했어요"</p>
+          <p>그땐 그냥 그만큼 중요한다 보다 라고 넘겼던 말씀.</p>
+          <p>지금 와서 드는 생각은요</p>
+          <p>우리 몸의 조직들이 서로 달라붙는 유착이 시작되면 만성 통증의 씨앗이 되고,<br>
+          아무리 노력해도 살이 잘 빠지지 않는 대사의 벽,<br>
+          인체의 메니커즘을 아는분들이 관리를 철저하게 하시는 이유는,<br>
+          곧 건강의 퇴보임을 아셨기 때문 입니다.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="wrap contact">
+      <h2>문의</h2>
+      <ul>
+        <li><strong>전화:</strong> <a class="phone" href="tel:010-5604-7405">010-5604-7405</a></li>
+        <li><strong>주소:</strong>
+          <a href="https://naver.me/5WOQza4q" target="_blank" rel="noopener" class="address-link">서울 송파구 송파대로 452 6층 (허니빌딩)</a>
+        </li>
+      </ul>
+
+      <div class="links-row" aria-label="바로가기">
+        <a class="icon-btn" href="https://naver.me/5WOQza4q" target="_blank" rel="noopener" title="네이버 예약" aria-label="네이버 예약 바로가기">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4 4h6.7l3.3 5.1V4H20v16h-6.7L10 14.9V20H4V4z"/>
+          </svg>
+        </a>
+        <a class="icon-btn" href="https://blog.naver.com/jenniesmassage_" target="_blank" rel="noopener" title="블로그" aria-label="숨쉼제니 블로그 바로가기">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4 6.5A2.5 2.5 0 0 1 6.5 4h11A2.5 2.5 0 0 1 20 6.5v7A4.5 4.5 0 0 1 15.5 18H10l-3.5 2v-2.5A3 3 0 0 1 4 14.5v-8z"/>
+          </svg>
+        </a>
+        <a class="icon-btn" href="https://www.instagram.com/soomshim.jennie/" target="_blank" rel="noopener" title="인스타그램" aria-label="숨쉼제니 인스타그램 바로가기">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M7 3h10a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4zm5 4.8A4.2 4.2 0 1 0 16.2 12 4.2 4.2 0 0 0 12 7.8zm6-1.8a1.2 1.2 0 1 0 1.2 1.2A1.2 1.2 0 0 0 18 6zM12 9.6A2.4 2.4 0 1 1 9.6 12 2.4 2.4 0 0 1 12 9.6z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">&copy; 숨쉼제니. All rights reserved.</div>
+  </footer>
+
+  <!-- 구조화 데이터 -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"LocalBusiness",
+    "name":"숨쉼제니",
+    "description":"1:1 프라이빗 맞춤 수기 운동 스트레칭 케어 공간",
+    "image":[
+      "images/inside01.jpg",
+      "images/inside02.jpg",
+      "images/inside03.jpg",
+      "images/inside04.jpg",
+      "images/inside05.jpg",
+      "images/inside06.jpg",
+      "images/inside07.jpg",
+      "images/inside08.jpg",
+      "images/inside09.jpg",
+      "images/inside10.jpg",
+      "images/inside11.jpg",
+      "images/inside12.jpg"
+    ],
+    "telephone":"+82-10-5604-7405",
+    "address":{
+      "@type":"PostalAddress",
+      "streetAddress":"송파대로 452 6층 (허니빌딩)",
+      "addressLocality":"송파구",
+      "addressRegion":"서울",
+      "addressCountry":"KR"
+    },
+    "openingHours":"Mo-Su 09:00-22:00",
+    "sameAs":[
+      "https://naver.me/5WOQza4q",
+      "https://blog.naver.com/jenniesmassage_",
+      "https://www.instagram.com/soomshim.jennie/"
+    ]
+  }
+  </script>
+</body>
+</html>
